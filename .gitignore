@@ -1,0 +1,22 @@
+# Maven
+/target/
+
+# IDEs
+/.idea/
+/*.iml
+/.classpath
+/.project
+/.settings/
+/.factorypath
+/.metadata/
+
+# Logs
+*.log
+
+# Environment files
+.env
+application.properties
+
+# OS files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+
+<h2>Welcome <span th:text="${username}"></span></h2>
+
+<hr/>
+
+<h3>Manufacturers</h3>
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+    </tr>
+    <tr th:each="m : ${manufacturers}">
+        <td th:text="${m.manufacturerId}"></td>
+        <td th:text="${m.manufacturerName}"></td>
+    </tr>
+</table>
+
+<br/>
+
+<h3>Segments</h3>
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+    </tr>
+    <tr th:each="s : ${segments}">
+        <td th:text="${s.segmentId}"></td>
+        <td th:text="${s.segmentName}"></td>
+    </tr>
+</table>
+
+</body>
+</html>
